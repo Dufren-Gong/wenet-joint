@@ -1,0 +1,10 @@
+#更改某个文件夹下所有某个格式文件的权限
+find local/ -type f -name "*.py" -exec chmod +x {} \;
+#为文件夹下所有文件执行更换权限
+chmod +x -R path/
+#解压zip文件
+unzip -q file.zip -d destination
+#解压tar.gz
+tar xfv 文件名.tar.gz
+#固定时间之后自动执行指令
+nohup bash -c "sleep 10800; your_command_here" > output.log 2>&1 &
